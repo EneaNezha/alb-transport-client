@@ -1,0 +1,56 @@
+<section class="tm-banner">
+  <div class="tm-container-outer tm-banner-bg">
+    <div class="container">
+
+      <div class="row tm-banner-row tm-banner-row-header">
+        <div class="col-xs-12">
+          <div class="tm-banner-header">
+            <h1 class="text-uppercase tm-banner-title">Choose Destination</h1>
+            <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>
+            <br><br><br><br><br><br><br><br><br><br>
+          </div>
+        </div>  <!-- col-xs-12 -->
+      </div> <!-- row -->
+      <div class="row tm-banner-row" id="tm-section-search">
+
+        <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+          <div class="form-row tm-search-form-row">
+
+            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+              <label for="inputCity2">Choose Your Departure</label>
+              <input name="destination" type="text" class="form-control" id="inputCity2" placeholder="Type your departure...">
+            </div>
+            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+            <label for="inputCity1">Choose Your Destination</label>
+            <input name="destination" type="text" class="form-control" id="inputCity1" placeholder="Type your destination...">
+          </div>
+            <div class="form-group tm-form-group tm-form-group-1">
+              <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                <label for="inputSeats">How many seats?</label>
+                <select name="seats" class="form-control tm-select" id="inputSeats">
+                  <option value="1" selected>1 Seat</option>
+                  <option value="2">2 Seats</option>
+                  <option value="3">3 Seats</option>
+                  <option value="4">4 Seats</option>
+                  <option value="5">5 Seats</option>
+                  <option value="6">6 Seats</option>
+                </select>
+              </div>
+
+            </div>
+          </div> <!-- form-row -->
+          <div class="form-row tm-search-form-row">
+            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+              <label for="btnSubmit">&nbsp;</label>
+              <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+            </div>
+          </div>
+        </form>
+
+      </div> <!-- row -->
+      <div class="tm-banner-overlay"></div>
+    </div>  <!-- .container -->
+  </div>     <!-- .tm-container-outer -->
+</section>
+
+<app-upcomming-routes [from]="'Tirana'"></app-upcomming-routes>
